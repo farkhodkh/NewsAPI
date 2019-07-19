@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:layout_margin="6dp"
+              android:padding="8dp"
+              android:background="@color/colorPrimary">
+
+    <TextView
+            android:text="Some text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:id="@+id/news_title"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="8dp"/>
+    <TextView
+            android:text="Add. text here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_author" android:background="@color/colorAccent"
+            android:gravity="right" android:layout_gravity="end"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_weight="1">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/news_description"
+                    android:maxLines="2"
+                    android:layout_margin="8dp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:id="@+id/news_image"
+                    android:layout_margin="8dp"/>
+        </LinearLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_publishedAt"
+                android:gravity="right"
+                android:layout_gravity="end"
+                android:textColor="@android:color/holo_blue_dark" android:text="published at"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_source"
+                android:gravity="right"
+                android:layout_gravity="end" android:text="source"/>
+    </LinearLayout>
+</LinearLayout>

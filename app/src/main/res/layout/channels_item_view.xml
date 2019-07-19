@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:layout_margin="6dp"
+              android:padding="8dp"
+              android:background="@color/colorPrimary">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" android:id="@+id/channel_name" android:layout_margin="16dp"/>
+        <Button
+                android:text="Show News"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btnShowNews"/>
+    </LinearLayout>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:id="@+id/channel_description" android:layout_margin="16dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/channel_category" android:layout_margin="16dp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/channel_language" android:layout_gravity="end"
+            android:layout_margin="16dp"/>
+    <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btn_favorites"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:layout_gravity="clip_horizontal|center|clip_vertical"/>
+</LinearLayout>
