@@ -1,5 +1,5 @@
 # NewsApi
-NewApi, Kotlin, RXAndroid, Retrofit, MVP
+NewsApi, Kotlin, RXAndroid, Retrofit, MVP
 
 How it works
 
